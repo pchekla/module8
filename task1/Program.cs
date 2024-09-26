@@ -7,17 +7,14 @@ class Program
     {
         // Запрашиваем у пользователя путь к папке для очистки
         Console.WriteLine("Введите путь к папке для очистки:");
-        string? inputPath = Console.ReadLine();
+        string? folderPath = Console.ReadLine();
 
         // Проверяем, не является ли введенное значение null или пустым
-        if (string.IsNullOrWhiteSpace(inputPath))
+        if (string.IsNullOrWhiteSpace(folderPath))
         {
             Console.WriteLine("Ошибка: Путь к папке не был введен.");
             return;
         }
-
-        // Преобразуем введенное значение к типу, не допускающему значение null
-        string folderPath = inputPath;
 
         try
         {
